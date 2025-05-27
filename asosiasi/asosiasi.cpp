@@ -35,6 +35,18 @@ class dokter{
     void cetakPasien();
 };
 
-void pasien::
+void pasien::tambahDokter(dokter* pDokter) {
+    daftar_dokter.push_back(pDokter);
+}
+
+void pasien::cetakDokter(){
+    cout << "Daftar dokter yang menangani pasien"
+    << this->nama << "\":n";
+    //auto digunakan dalam perulangan 
+    for(auto& a: daftar_dokter){
+        cout << a->nama << "\n";
+    }
+    cout << endl;
+}
 
 
