@@ -49,4 +49,16 @@ void pasien::cetakDokter(){
     cout << endl;
 }
 
+void dokter ::tambahPasien(pasien* pPasien){
+    daftar_pasien.push_back(pPasien);
+
+}
+void dokter::cetakPasien(){
+    cout << "Daftar dokter yang menagani pasien \"";
+    //auto digunakan dalam perulangan
+    for (auto& a : daftar_pasien){
+        cout << a->nama << "\n";
+    }
+    cout << endl;
+}
 
