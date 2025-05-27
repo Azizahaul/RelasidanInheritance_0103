@@ -12,7 +12,7 @@ int main(){
     anak* varanak2 = new anak("rini");
     anak* varanak3 = new anak("dewi")
 
-    varibu->tambahAnak(varanak1);
+    varIbu->tambahAnak(varanak1);
     varibu->tambahAnak(varanak2);
     varibu2->tambahAnak(varanak3);
     varibu2->tambahAnak(varanak1);
